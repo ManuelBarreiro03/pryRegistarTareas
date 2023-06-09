@@ -19,7 +19,6 @@ namespace pryNuevoProyecto
             cboTipo.Items.Add("Aviso");
             cboTipo.Items.Add("Informatica");
         }
-
         private void cmdAgregar_Click(object sender, EventArgs e)
         {
             if(dtpFecha.Value >= DateTime.Today)
@@ -35,15 +34,12 @@ namespace pryNuevoProyecto
                         MessageBox.Show("falta Detalle");
                         txtDetalle.Focus();
                     }
-
                 }
                 else
                 {
                     MessageBox.Show("Seleccione tipo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     cboTipo.Focus();
                 }
-
-
             }
             else
             {
@@ -51,7 +47,6 @@ namespace pryNuevoProyecto
                 dtpFecha.Focus();
                 dtpFecha.Value = DateTime.Today;
             }
-
         }
     }
 }
