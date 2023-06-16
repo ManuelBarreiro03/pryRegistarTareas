@@ -58,6 +58,12 @@
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRegistar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistar.Designer.cs">
+      <DependentUpon>frmRegistar.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRegistrarTarea.cs">
       <SubType>Form</SubType>
     </Compile>
