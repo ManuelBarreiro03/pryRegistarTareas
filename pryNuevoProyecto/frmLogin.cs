@@ -16,5 +16,11 @@ namespace pryNuevoProyecto
         {
             InitializeComponent();
         }
+
+        private void cmdAceptar_Click(object sender, EventArgs e)
+        {
+            frmRegistrarTarea ventanaRegistrarTarea = new frmRegistrarTarea();
+            ShowDialog(ventanaRegistrarTarea);
+        }
     }
 }

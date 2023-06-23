@@ -16,7 +16,7 @@ namespace pryNuevoProyecto
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmRegistrarTarea());
+            Application.Run(new frmPrincipal());
         }
     }
 }
