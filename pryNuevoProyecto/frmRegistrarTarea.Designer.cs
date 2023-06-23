@@ -44,8 +44,14 @@
             this.lblDetalle = new System.Windows.Forms.Label();
             this.cmdAgregar = new System.Windows.Forms.Button();
             this.cmdCancelar = new System.Windows.Forms.Button();
+            this.cmdMostrar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.mrcTareas.SuspendLayout();
             this.mrcReunion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dtpFecha
@@ -57,6 +63,7 @@
             // 
             // cboTipo
             // 
+            this.cboTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTipo.FormattingEnabled = true;
             this.cboTipo.Location = new System.Drawing.Point(14, 72);
             this.cboTipo.Name = "cboTipo";
@@ -138,7 +145,7 @@
             // optNo
             // 
             this.optNo.AutoSize = true;
-            this.optNo.Location = new System.Drawing.Point(118, 19);
+            this.optNo.Location = new System.Drawing.Point(132, 19);
             this.optNo.Name = "optNo";
             this.optNo.Size = new System.Drawing.Size(41, 17);
             this.optNo.TabIndex = 1;
@@ -149,7 +156,8 @@
             // optSi
             // 
             this.optSi.AutoSize = true;
-            this.optSi.Location = new System.Drawing.Point(60, 19);
+            this.optSi.Checked = true;
+            this.optSi.Location = new System.Drawing.Point(74, 19);
             this.optSi.Name = "optSi";
             this.optSi.Size = new System.Drawing.Size(35, 17);
             this.optSi.TabIndex = 0;
@@ -186,28 +194,78 @@
             // 
             // cmdAgregar
             // 
-            this.cmdAgregar.Location = new System.Drawing.Point(14, 363);
+            this.cmdAgregar.Location = new System.Drawing.Point(12, 363);
             this.cmdAgregar.Name = "cmdAgregar";
-            this.cmdAgregar.Size = new System.Drawing.Size(114, 28);
+            this.cmdAgregar.Size = new System.Drawing.Size(70, 28);
             this.cmdAgregar.TabIndex = 9;
-            this.cmdAgregar.Text = "Grabar";
+            this.cmdAgregar.Text = "Agregar";
             this.cmdAgregar.UseVisualStyleBackColor = true;
             this.cmdAgregar.Click += new System.EventHandler(this.cmdAgregar_Click);
             // 
             // cmdCancelar
             // 
-            this.cmdCancelar.Location = new System.Drawing.Point(134, 363);
+            this.cmdCancelar.Location = new System.Drawing.Point(88, 363);
             this.cmdCancelar.Name = "cmdCancelar";
-            this.cmdCancelar.Size = new System.Drawing.Size(125, 28);
+            this.cmdCancelar.Size = new System.Drawing.Size(81, 28);
             this.cmdCancelar.TabIndex = 10;
             this.cmdCancelar.Text = "Cancelar";
             this.cmdCancelar.UseVisualStyleBackColor = true;
+            // 
+            // cmdMostrar
+            // 
+            this.cmdMostrar.Location = new System.Drawing.Point(175, 363);
+            this.cmdMostrar.Name = "cmdMostrar";
+            this.cmdMostrar.Size = new System.Drawing.Size(81, 28);
+            this.cmdMostrar.TabIndex = 12;
+            this.cmdMostrar.Text = "Mostar";
+            this.cmdMostrar.UseVisualStyleBackColor = true;
+            this.cmdMostrar.Click += new System.EventHandler(this.cmdMostrar_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(285, 20);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(140, 45);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(285, 71);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(140, 45);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(285, 122);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(140, 45);
+            this.button3.TabIndex = 15;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(285, 186);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(140, 204);
+            this.dataGridView1.TabIndex = 16;
             // 
             // frmRegistrarTarea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(729, 407);
+            this.ClientSize = new System.Drawing.Size(442, 407);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cmdMostrar);
             this.Controls.Add(this.cmdCancelar);
             this.Controls.Add(this.cmdAgregar);
             this.Controls.Add(this.lblDetalle);
@@ -225,6 +283,7 @@
             this.mrcTareas.PerformLayout();
             this.mrcReunion.ResumeLayout(false);
             this.mrcReunion.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,5 +307,10 @@
         private System.Windows.Forms.Label lblDetalle;
         private System.Windows.Forms.Button cmdAgregar;
         private System.Windows.Forms.Button cmdCancelar;
+        private System.Windows.Forms.Button cmdMostrar;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

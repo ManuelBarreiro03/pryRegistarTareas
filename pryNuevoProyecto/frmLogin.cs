@@ -20,7 +20,13 @@ namespace pryNuevoProyecto
         private void cmdAceptar_Click(object sender, EventArgs e)
         {
             frmRegistrarTarea ventanaRegistrarTarea = new frmRegistrarTarea();
-            ShowDialog(ventanaRegistrarTarea);
+            ventanaRegistrarTarea.ShowDialog();
+            
+        }
+
+        private void cmdCancelar_Click(object sender, EventArgs e)
+        {
+           this.Close();
         }
     }
 }

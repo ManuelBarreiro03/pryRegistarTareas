@@ -12,6 +12,9 @@ namespace pryNuevoProyecto
 {
     public partial class frmPrincipal : Form
     {
+        public string[,] matrizMostrar = new string[5, 5];
+
+
         public frmPrincipal()
         {
             InitializeComponent();
@@ -25,13 +28,13 @@ namespace pryNuevoProyecto
         private void cmdLogin_Click(object sender, EventArgs e)
         {
             frmLogin ventanaLogin = new frmLogin();
-            ShowDialog(ventanaLogin);
+            ventanaLogin.ShowDialog();
         }
 
         private void cmdRegistrar_Click(object sender, EventArgs e)
         {
             frmRegistar ventanaregistrar = new frmRegistar();
-            ShowDialog(ventanaregistrar);
+            ventanaregistrar.ShowDialog();
         }
     }
 }

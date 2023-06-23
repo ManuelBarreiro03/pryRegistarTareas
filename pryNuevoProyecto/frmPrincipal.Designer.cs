@@ -72,6 +72,7 @@
             this.Controls.Add(this.cmdRegistrar);
             this.Controls.Add(this.cmdLogin);
             this.Name = "frmPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPrincipal";
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.ResumeLayout(false);
