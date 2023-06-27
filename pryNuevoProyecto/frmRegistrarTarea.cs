@@ -64,7 +64,7 @@ namespace pryNuevoProyecto
                             ventanaprincipal.matrizMostrar[indiceFilas, 2] = txtDetalle.Text + " ";
                             ventanaprincipal.matrizMostrar[indiceFilas, 3] = varTareas + " ";
                             ventanaprincipal.matrizMostrar[indiceFilas, 4] = varReunion + " ";
-                            ventanaprincipal.ShowDialog();
+                            ventanaprincipal.matrizMostrar.
                             indiceFilas++;
                         }
                         else
