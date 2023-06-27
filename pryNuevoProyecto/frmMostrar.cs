@@ -22,12 +22,13 @@ namespace pryNuevoProyecto
         {
             frmPrincipal ventanaPrincipal = new frmPrincipal();
             dgvMostrar.Rows.Clear();
+            dgvMostrar.Rows.Add(4);
             while (filas <5)
             {
                 columna = 0;
                 while (columna <5) 
                 {
-                    dgvMostrar.Rows.Add(ventanaPrincipal.matrizMostrar[filas, columna]);
+                    dgvMostrar.Rows[filas].Cells[columna].Value = ventanaPrincipal.matrizMostrar[filas, columna];
                     columna++;
                 }
                 filas++;
