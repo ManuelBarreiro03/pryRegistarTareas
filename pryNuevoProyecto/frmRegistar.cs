@@ -16,5 +16,25 @@ namespace pryNuevoProyecto
         {
             InitializeComponent();
         }
+
+        private void cmdRegistrar_Click(object sender, EventArgs e)
+        {
+            if (txtNombre.Text != "")
+            {
+                if (txtApellido.Text != "")
+                {
+                    if (txtUsuario.Text != "")
+                    {
+                        if (txtContrasena.Text != "")
+                        {
+                            if (txtConfirmar.Text != "")
+                            {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

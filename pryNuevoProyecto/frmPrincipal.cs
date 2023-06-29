@@ -12,8 +12,8 @@ namespace pryNuevoProyecto
 {
     public partial class frmPrincipal : Form
     {
-        public string[,] matrizMostrar = new string[5, 5];
-        public string[,] MatrizUsuario = new string[5, 5];
+        static public string[,] matrizMostrar = new string[5, 5];
+        static public string[,] MatrizUsuario = new string[5, 5];
 
 
         public frmPrincipal()

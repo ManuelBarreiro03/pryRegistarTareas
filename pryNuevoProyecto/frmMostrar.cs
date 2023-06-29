@@ -20,15 +20,14 @@ namespace pryNuevoProyecto
         }
         private void frmMostar_Load(object sender, EventArgs e)
         {
-            frmPrincipal ventanaPrincipal = new frmPrincipal();
             dgvMostrar.Rows.Clear();
-            dgvMostrar.Rows.Add(4);
+            dgvMostrar.Rows.Add(frmPrincipal.matrizMostrar.GetLength(0));
             while (filas <5)
             {
                 columna = 0;
                 while (columna <5) 
                 {
-                    dgvMostrar.Rows[filas].Cells[columna].Value = ventanaPrincipal.matrizMostrar[filas, columna];
+                    dgvMostrar.Rows[filas].Cells[columna].Value = frmPrincipal.matrizMostrar[filas, columna];
                     columna++;
                 }
                 filas++;
