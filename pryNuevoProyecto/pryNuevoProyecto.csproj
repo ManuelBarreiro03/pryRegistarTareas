@@ -64,11 +64,11 @@
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmRegistar.cs">
+    <Compile Include="frmRegistarUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmRegistar.Designer.cs">
-      <DependentUpon>frmRegistar.cs</DependentUpon>
+    <Compile Include="frmRegistarUsuario.Designer.cs">
+      <DependentUpon>frmRegistarUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="frmRegistrarTarea.cs">
       <SubType>Form</SubType>
@@ -87,8 +87,8 @@
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRegistar.resx">
-      <DependentUpon>frmRegistar.cs</DependentUpon>
+    <EmbeddedResource Include="frmRegistarUsuario.resx">
+      <DependentUpon>frmRegistarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegistrarTarea.resx">
       <DependentUpon>frmRegistrarTarea.cs</DependentUpon>

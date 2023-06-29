@@ -34,7 +34,7 @@ namespace pryNuevoProyecto
 
         private void cmdRegistrar_Click(object sender, EventArgs e)
         {
-            frmRegistar ventanaregistrar = new frmRegistar();
+            frmRegistarUsuario ventanaregistrar = new frmRegistarUsuario();
             ventanaregistrar.ShowDialog();
         }
     }

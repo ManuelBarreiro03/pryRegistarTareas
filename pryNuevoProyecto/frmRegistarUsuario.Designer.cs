@@ -1,6 +1,6 @@
 ﻿namespace pryNuevoProyecto
 {
-    partial class frmRegistar
+    partial class frmRegistarUsuario
     {
         /// <summary>
         /// Required designer variable.
@@ -52,6 +52,7 @@
             this.cmdVolver.TabIndex = 0;
             this.cmdVolver.Text = "Volver";
             this.cmdVolver.UseVisualStyleBackColor = true;
+            this.cmdVolver.Click += new System.EventHandler(this.cmdVolver_Click);
             // 
             // cmdRegistrar
             // 

@@ -59,12 +59,11 @@ namespace pryNuevoProyecto
                         if (indiceFilas < 5)
                         {
                             frmPrincipal ventanaprincipal = new frmPrincipal();
-                            ventanaprincipal.matrizMostrar[indiceFilas, 0] = dtpFecha.Text + " ";
-                            ventanaprincipal.matrizMostrar[indiceFilas, 1] = cboTipo.Text + " ";
-                            ventanaprincipal.matrizMostrar[indiceFilas, 2] = txtDetalle.Text + " ";
-                            ventanaprincipal.matrizMostrar[indiceFilas, 3] = varTareas + " ";
-                            ventanaprincipal.matrizMostrar[indiceFilas, 4] = varReunion + " ";
-                            ventanaprincipal.matrizMostrar.
+                            frmPrincipal.matrizMostrar[indiceFilas, 0] = dtpFecha.Text + " ";
+                            frmPrincipal.matrizMostrar[indiceFilas, 1] = cboTipo.Text + " ";
+                            frmPrincipal.matrizMostrar[indiceFilas, 2] = txtDetalle.Text + " ";
+                            frmPrincipal.matrizMostrar[indiceFilas, 3] = varTareas + " ";
+                            frmPrincipal.matrizMostrar[indiceFilas, 4] = varReunion + " ";
                             indiceFilas++;
                         }
                         else
@@ -96,6 +95,11 @@ namespace pryNuevoProyecto
         {
             frmMostrar ventanaMostar = new frmMostrar();
             ventanaMostar.ShowDialog();
+        }
+
+        private void cmdCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

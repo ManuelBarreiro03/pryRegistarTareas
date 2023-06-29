@@ -12,7 +12,7 @@ namespace pryNuevoProyecto
 {
     public partial class frmMostrar : Form
     {
-        int columna;
+        int columna = 0;
         int filas =0;
         public frmMostrar()
         {
@@ -22,16 +22,18 @@ namespace pryNuevoProyecto
         {
             dgvMostrar.Rows.Clear();
             dgvMostrar.Rows.Add(frmPrincipal.matrizMostrar.GetLength(0));
-            while (filas <5)
+            while (filas < frmPrincipal.matrizMostrar.GetLength(0))
             {
                 columna = 0;
-                while (columna <5) 
+                while (columna < frmPrincipal.matrizMostrar.GetLength(1))
                 {
                     dgvMostrar.Rows[filas].Cells[columna].Value = frmPrincipal.matrizMostrar[filas, columna];
                     columna++;
                 }
                 filas++;
             }
+            filas = 0;
+            columna = 0;
         }
     }
 }
