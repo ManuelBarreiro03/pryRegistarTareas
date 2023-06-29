@@ -13,7 +13,7 @@ namespace pryNuevoProyecto
     public partial class frmRegistarUsuario : Form
     {
         string contra, confirmarContra;
-        int indiceFilas = 0;
+        int indiceFilas = 1;
         public frmRegistarUsuario()
         {
             InitializeComponent();
@@ -37,6 +37,10 @@ namespace pryNuevoProyecto
                                 {
                                     if (contra == confirmarContra)
                                     {
+                                        while (frmPrincipal.MatrizUsuario[indiceFilas,0] != null)
+                                        {
+                                            indiceFilas++;
+                                        }
                                         frmPrincipal.MatrizUsuario[indiceFilas, 0] = txtUsuario.Text;
                                         frmPrincipal.MatrizUsuario[indiceFilas, 1] = txtContrasena.Text;
                                         MessageBox.Show("Usuario cargado", "", MessageBoxButtons.OK);
@@ -83,6 +87,11 @@ namespace pryNuevoProyecto
                 MessageBox.Show("Coloque un nombre", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtNombre.Focus();
             }
+        }
+
+        private void frmRegistarUsuario_Load(object sender, EventArgs e)
+        {
+            
         }
 
         private void cmdVolver_Click(object sender, EventArgs e)

@@ -193,7 +193,7 @@
             this.cmdAgregar.Location = new System.Drawing.Point(12, 363);
             this.cmdAgregar.Name = "cmdAgregar";
             this.cmdAgregar.Size = new System.Drawing.Size(70, 28);
-            this.cmdAgregar.TabIndex = 9;
+            this.cmdAgregar.TabIndex = 3;
             this.cmdAgregar.Text = "Agregar";
             this.cmdAgregar.UseVisualStyleBackColor = true;
             this.cmdAgregar.Click += new System.EventHandler(this.cmdAgregar_Click);
@@ -203,7 +203,7 @@
             this.cmdCancelar.Location = new System.Drawing.Point(88, 363);
             this.cmdCancelar.Name = "cmdCancelar";
             this.cmdCancelar.Size = new System.Drawing.Size(81, 28);
-            this.cmdCancelar.TabIndex = 10;
+            this.cmdCancelar.TabIndex = 4;
             this.cmdCancelar.Text = "Cancelar";
             this.cmdCancelar.UseVisualStyleBackColor = true;
             this.cmdCancelar.Click += new System.EventHandler(this.cmdCancelar_Click);
@@ -213,7 +213,7 @@
             this.cmdMostrar.Location = new System.Drawing.Point(175, 363);
             this.cmdMostrar.Name = "cmdMostrar";
             this.cmdMostrar.Size = new System.Drawing.Size(81, 28);
-            this.cmdMostrar.TabIndex = 12;
+            this.cmdMostrar.TabIndex = 5;
             this.cmdMostrar.Text = "Mostar";
             this.cmdMostrar.UseVisualStyleBackColor = true;
             this.cmdMostrar.Click += new System.EventHandler(this.cmdMostrar_Click);

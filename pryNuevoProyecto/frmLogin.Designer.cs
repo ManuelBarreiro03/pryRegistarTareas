@@ -42,7 +42,7 @@
             this.cmdAceptar.Location = new System.Drawing.Point(13, 133);
             this.cmdAceptar.Name = "cmdAceptar";
             this.cmdAceptar.Size = new System.Drawing.Size(102, 39);
-            this.cmdAceptar.TabIndex = 0;
+            this.cmdAceptar.TabIndex = 2;
             this.cmdAceptar.Text = "Aceptar";
             this.cmdAceptar.UseVisualStyleBackColor = true;
             this.cmdAceptar.Click += new System.EventHandler(this.cmdAceptar_Click);
@@ -52,7 +52,7 @@
             this.cmdCancelar.Location = new System.Drawing.Point(139, 133);
             this.cmdCancelar.Name = "cmdCancelar";
             this.cmdCancelar.Size = new System.Drawing.Size(102, 39);
-            this.cmdCancelar.TabIndex = 1;
+            this.cmdCancelar.TabIndex = 3;
             this.cmdCancelar.Text = "Cancelar";
             this.cmdCancelar.UseVisualStyleBackColor = true;
             this.cmdCancelar.Click += new System.EventHandler(this.cmdCancelar_Click);
@@ -83,14 +83,14 @@
             this.txtContrasena.Name = "txtContrasena";
             this.txtContrasena.PasswordChar = '*';
             this.txtContrasena.Size = new System.Drawing.Size(196, 20);
-            this.txtContrasena.TabIndex = 4;
+            this.txtContrasena.TabIndex = 1;
             // 
             // txtUsuarios
             // 
             this.txtUsuarios.Location = new System.Drawing.Point(22, 36);
             this.txtUsuarios.Name = "txtUsuarios";
             this.txtUsuarios.Size = new System.Drawing.Size(196, 20);
-            this.txtUsuarios.TabIndex = 5;
+            this.txtUsuarios.TabIndex = 0;
             // 
             // frmLogin
             // 

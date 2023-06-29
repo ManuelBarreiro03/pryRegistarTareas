@@ -24,16 +24,8 @@ namespace pryNuevoProyecto
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
-            while (indiceFilas<= MatrizUsuario.GetLength(0))
-            {
-                indiceColumnas = 0;
-                while (indiceColumnas <= MatrizUsuario.GetLength(1))
-                {
-                    MatrizUsuario[indiceFilas, indiceColumnas] = "";
-                    indiceColumnas++;
-                }
-                indiceFilas++;
-            }
+            frmPrincipal.MatrizUsuario[0, 0] = "admin";
+            frmPrincipal.MatrizUsuario[0, 1] = "admin";
         }
 
         private void cmdLogin_Click(object sender, EventArgs e)
