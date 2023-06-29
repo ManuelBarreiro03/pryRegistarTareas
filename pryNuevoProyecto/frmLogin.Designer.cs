@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.cmdAceptar = new System.Windows.Forms.Button();
             this.cmdCancelar = new System.Windows.Forms.Button();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblContrasena = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtContrasena = new System.Windows.Forms.TextBox();
+            this.txtUsuarios = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // cmdAceptar
@@ -76,32 +77,33 @@
             this.lblContrasena.TabIndex = 3;
             this.lblContrasena.Text = "Contraseña";
             // 
-            // textBox1
+            // txtContrasena
             // 
-            this.textBox1.Location = new System.Drawing.Point(22, 93);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(196, 20);
-            this.textBox1.TabIndex = 4;
+            this.txtContrasena.Location = new System.Drawing.Point(22, 93);
+            this.txtContrasena.Name = "txtContrasena";
+            this.txtContrasena.PasswordChar = '*';
+            this.txtContrasena.Size = new System.Drawing.Size(196, 20);
+            this.txtContrasena.TabIndex = 4;
             // 
-            // textBox2
+            // txtUsuarios
             // 
-            this.textBox2.Location = new System.Drawing.Point(22, 36);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(196, 20);
-            this.textBox2.TabIndex = 5;
+            this.txtUsuarios.Location = new System.Drawing.Point(22, 36);
+            this.txtUsuarios.Name = "txtUsuarios";
+            this.txtUsuarios.Size = new System.Drawing.Size(196, 20);
+            this.txtUsuarios.TabIndex = 5;
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(266, 197);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(266, 183);
+            this.Controls.Add(this.txtUsuarios);
+            this.Controls.Add(this.txtContrasena);
             this.Controls.Add(this.lblContrasena);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.cmdCancelar);
             this.Controls.Add(this.cmdAceptar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
@@ -116,7 +118,7 @@
         private System.Windows.Forms.Button cmdCancelar;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Label lblContrasena;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtContrasena;
+        private System.Windows.Forms.TextBox txtUsuarios;
     }
 }

@@ -31,7 +31,6 @@ namespace pryNuevoProyecto
                 {
                     if (txtDetalle.Text != "")
                     {
-                        MessageBox.Show("vamos a grabar");
                         if (optSi.Checked == true)
                         {
                             varTareas = "SI";
@@ -59,17 +58,20 @@ namespace pryNuevoProyecto
                         if (indiceFilas < 5)
                         {
                             frmPrincipal ventanaprincipal = new frmPrincipal();
-                            frmPrincipal.matrizMostrar[indiceFilas, 0] = dtpFecha.Text + " ";
-                            frmPrincipal.matrizMostrar[indiceFilas, 1] = cboTipo.Text + " ";
-                            frmPrincipal.matrizMostrar[indiceFilas, 2] = txtDetalle.Text + " ";
-                            frmPrincipal.matrizMostrar[indiceFilas, 3] = varTareas + " ";
-                            frmPrincipal.matrizMostrar[indiceFilas, 4] = varReunion + " ";
+                            frmPrincipal.matrizMostrar[indiceFilas, 0] = dtpFecha.Text;
+                            frmPrincipal.matrizMostrar[indiceFilas, 1] = cboTipo.Text;
+                            frmPrincipal.matrizMostrar[indiceFilas, 2] = txtDetalle.Text;
+                            frmPrincipal.matrizMostrar[indiceFilas, 3] = varTareas;
+                            frmPrincipal.matrizMostrar[indiceFilas, 4] = varReunion;
                             indiceFilas++;
+                            MessageBox.Show("Tarea grabada", "Tareas", MessageBoxButtons.OK);
                         }
                         else
                         {
                             cmdAgregar.Enabled = false;
+                            MessageBox.Show("Maximo alcanzado", "limite", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
+                        
                     }
                     else
                     {

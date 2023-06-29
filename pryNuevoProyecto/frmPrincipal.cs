@@ -14,6 +14,7 @@ namespace pryNuevoProyecto
     {
         static public string[,] matrizMostrar = new string[5,5];
         static public string[,] MatrizUsuario = new string[2,5];
+        int indiceFilas = 0, indiceColumnas = 0;
 
 
         public frmPrincipal()
@@ -23,7 +24,16 @@ namespace pryNuevoProyecto
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
-
+            while (indiceFilas< MatrizUsuario.GetLength(0))
+            {
+                indiceColumnas = 0;
+                while (indiceColumnas<MatrizUsuario.GetLength(1))
+                {
+                    MatrizUsuario[indiceFilas, indiceColumnas] = "";
+                    indiceColumnas++;
+                }
+                indiceFilas++;
+            }
         }
 
         private void cmdLogin_Click(object sender, EventArgs e)

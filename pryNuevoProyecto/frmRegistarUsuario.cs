@@ -13,6 +13,7 @@ namespace pryNuevoProyecto
     public partial class frmRegistarUsuario : Form
     {
         string contra, confirmarContra;
+        int indiceFilas = 0;
         public frmRegistarUsuario()
         {
             InitializeComponent();
@@ -32,14 +33,25 @@ namespace pryNuevoProyecto
                         {
                             if (txtConfirmar.Text != "")
                             {
-                                if (contra == confirmarContra)
+                                if (cboNacionalidad.Text != "")
                                 {
+                                    if (contra == confirmarContra)
+                                    {
+                                        frmPrincipal.MatrizUsuario[indiceFilas, 0] = txtUsuario.Text;
+                                        frmPrincipal.MatrizUsuario[indiceFilas, 1] = txtContrasena.Text;
+                                        MessageBox.Show("Usuario cargado", "", MessageBoxButtons.OK);
+                                        this.Close();
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Las contraseñas no couinciden", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+                                    }
                                 }
                                 else
                                 {
-                                    MessageBox.Show("Las contraseñas no couinciden","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
+                                    MessageBox.Show("Coloque un País", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    cboNacionalidad.Focus();
                                 }
                             }
                             else

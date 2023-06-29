@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegistarUsuario));
             this.cmdVolver = new System.Windows.Forms.Button();
             this.cmdRegistrar = new System.Windows.Forms.Button();
             this.lblNombre = new System.Windows.Forms.Label();
@@ -167,7 +168,7 @@
             this.cboNacionalidad.Size = new System.Drawing.Size(121, 21);
             this.cboNacionalidad.TabIndex = 14;
             // 
-            // frmRegistar
+            // frmRegistarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -186,7 +187,8 @@
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.cmdRegistrar);
             this.Controls.Add(this.cmdVolver);
-            this.Name = "frmRegistar";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "frmRegistarUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmRegistar";
             this.ResumeLayout(false);

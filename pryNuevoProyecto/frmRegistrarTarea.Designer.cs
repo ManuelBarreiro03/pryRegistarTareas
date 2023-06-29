@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegistrarTarea));
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.cboTipo = new System.Windows.Forms.ComboBox();
             this.txtDetalle = new System.Windows.Forms.TextBox();
@@ -233,9 +234,10 @@
             this.Controls.Add(this.txtDetalle);
             this.Controls.Add(this.cboTipo);
             this.Controls.Add(this.dtpFecha);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmRegistrarTarea";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmRegistrarTarea";
+            this.Text = "Registrar Tarea";
             this.mrcTareas.ResumeLayout(false);
             this.mrcTareas.PerformLayout();
             this.mrcReunion.ResumeLayout(false);
