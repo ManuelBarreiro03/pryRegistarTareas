@@ -47,20 +47,20 @@
             // 
             // cmdVolver
             // 
-            this.cmdVolver.Location = new System.Drawing.Point(11, 367);
+            this.cmdVolver.Location = new System.Drawing.Point(145, 367);
             this.cmdVolver.Name = "cmdVolver";
             this.cmdVolver.Size = new System.Drawing.Size(91, 32);
-            this.cmdVolver.TabIndex = 0;
+            this.cmdVolver.TabIndex = 7;
             this.cmdVolver.Text = "Volver";
             this.cmdVolver.UseVisualStyleBackColor = true;
             this.cmdVolver.Click += new System.EventHandler(this.cmdVolver_Click);
             // 
             // cmdRegistrar
             // 
-            this.cmdRegistrar.Location = new System.Drawing.Point(136, 367);
+            this.cmdRegistrar.Location = new System.Drawing.Point(12, 367);
             this.cmdRegistrar.Name = "cmdRegistrar";
             this.cmdRegistrar.Size = new System.Drawing.Size(91, 32);
-            this.cmdRegistrar.TabIndex = 1;
+            this.cmdRegistrar.TabIndex = 6;
             this.cmdRegistrar.Text = "Registrar";
             this.cmdRegistrar.UseVisualStyleBackColor = true;
             this.cmdRegistrar.Click += new System.EventHandler(this.cmdRegistrar_Click);
@@ -124,35 +124,35 @@
             this.txtNombre.Location = new System.Drawing.Point(60, 38);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(121, 20);
-            this.txtNombre.TabIndex = 9;
+            this.txtNombre.TabIndex = 0;
             // 
             // txtApellido
             // 
             this.txtApellido.Location = new System.Drawing.Point(60, 95);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(121, 20);
-            this.txtApellido.TabIndex = 10;
+            this.txtApellido.TabIndex = 1;
             // 
             // txtUsuario
             // 
             this.txtUsuario.Location = new System.Drawing.Point(60, 152);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(121, 20);
-            this.txtUsuario.TabIndex = 11;
+            this.txtUsuario.TabIndex = 2;
             // 
             // txtContrasena
             // 
             this.txtContrasena.Location = new System.Drawing.Point(60, 209);
             this.txtContrasena.Name = "txtContrasena";
             this.txtContrasena.Size = new System.Drawing.Size(121, 20);
-            this.txtContrasena.TabIndex = 12;
+            this.txtContrasena.TabIndex = 3;
             // 
             // txtConfirmar
             // 
             this.txtConfirmar.Location = new System.Drawing.Point(60, 266);
             this.txtConfirmar.Name = "txtConfirmar";
             this.txtConfirmar.Size = new System.Drawing.Size(121, 20);
-            this.txtConfirmar.TabIndex = 13;
+            this.txtConfirmar.TabIndex = 4;
             // 
             // cboNacionalidad
             // 
@@ -166,7 +166,7 @@
             this.cboNacionalidad.Location = new System.Drawing.Point(60, 323);
             this.cboNacionalidad.Name = "cboNacionalidad";
             this.cboNacionalidad.Size = new System.Drawing.Size(121, 21);
-            this.cboNacionalidad.TabIndex = 14;
+            this.cboNacionalidad.TabIndex = 5;
             // 
             // frmRegistarUsuario
             // 
