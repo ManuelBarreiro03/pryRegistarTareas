@@ -75,7 +75,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmPrincipal";
+            this.Text = "Principal";
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

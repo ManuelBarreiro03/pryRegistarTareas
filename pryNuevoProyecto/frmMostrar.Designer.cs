@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMostrar));
             this.dgvMostrar = new System.Windows.Forms.DataGridView();
             this.colFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -82,9 +83,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(556, 241);
             this.Controls.Add(this.dgvMostrar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMostrar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmMostar";
+            this.Text = "Mostar";
             this.Load += new System.EventHandler(this.frmMostar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMostrar)).EndInit();
             this.ResumeLayout(false);

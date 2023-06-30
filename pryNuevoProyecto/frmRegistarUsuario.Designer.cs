@@ -144,6 +144,7 @@
             // 
             this.txtContrasena.Location = new System.Drawing.Point(60, 209);
             this.txtContrasena.Name = "txtContrasena";
+            this.txtContrasena.PasswordChar = '*';
             this.txtContrasena.Size = new System.Drawing.Size(121, 20);
             this.txtContrasena.TabIndex = 3;
             // 
@@ -151,6 +152,7 @@
             // 
             this.txtConfirmar.Location = new System.Drawing.Point(60, 266);
             this.txtConfirmar.Name = "txtConfirmar";
+            this.txtConfirmar.PasswordChar = '*';
             this.txtConfirmar.Size = new System.Drawing.Size(121, 20);
             this.txtConfirmar.TabIndex = 4;
             // 
@@ -190,7 +192,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmRegistarUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmRegistar";
+            this.Text = "Registar Usuario";
             this.Load += new System.EventHandler(this.frmRegistarUsuario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
